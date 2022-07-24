@@ -90,6 +90,9 @@ function resetGame(){
         score=0;
         moves=0;
         countScore();
+        for(let i=0;i<allCards.length;i++){
+            allCards[i].style.order=Math.floor(Math.random()*12);
+        }
     }
     // console.log("reset game");
 }
